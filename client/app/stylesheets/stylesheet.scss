@@ -1,0 +1,53 @@
+.main {
+  background: red;
+  margin: 25 auto; 
+  overflow: scroll;
+  height: 85%;
+  width: 85%;
+  border: 20px solid black;
+}
+
+.navBar {
+  background: yellow;
+  width: 20%;
+  height: 100%;
+  float: left
+}
+
+.content {
+  background: lime;
+  width: 80%;
+  height: 100%;
+  float: right;
+}
+
+.project {
+  background: blue
+}
+.visible {
+  opacity: 1;
+  animation: show 1s
+}
+
+.hidden {
+  opacity: 0;
+  animation: hide 1s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
