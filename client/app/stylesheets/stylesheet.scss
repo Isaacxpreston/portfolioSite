@@ -20,10 +20,6 @@
   border: 20px solid blue;
 }
 
-.navButton:hover {
-  background: blue
-}
-
 .content {
   background: lime;
   width: 80%;
@@ -81,4 +77,33 @@
   to {
     opacity: 0
   }
+}
+
+.diagonal {
+  position: relative;
+  color: blue;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+.diagonal:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 1000%;
+  background: white;
+  z-index: -1;
+  transform-origin: 0% 0%;
+  transform: translateX(20%) translateY(10%) rotate(-45deg);
+  transition: linear .4s;
+}
+.diagonal:hover::after {
+  transform: translateY(10%) translateX(-15%) rotate(-45deg);
+}
+
+.diagonalText {
+  margin: 25% auto
 }

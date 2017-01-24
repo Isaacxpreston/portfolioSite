@@ -8,8 +8,8 @@ const NavButton = React.createClass({
 	
 	render() {
 		return (
-			<div className="navButton" onClick={this.navToLink.bind(this, this.props.url)}>
-        {this.props.title}
+			<div className="navButton diagonal" onClick={this.navToLink.bind(this, this.props.url)}>
+        <div className="diagonalText">{this.props.title}</div>
 			</div>
 		)
 	}
