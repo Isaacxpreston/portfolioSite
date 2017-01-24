@@ -9,7 +9,7 @@ const Contact = React.createClass({
 	render() {
 		// console.log(this.props, this.state, "dummycomp")
 		return (
-			<div>
+			<div className="project">
 				<h1>Contact</h1>
 				isaacxpreston@gmail.com
 				github.com/isaacxpreston

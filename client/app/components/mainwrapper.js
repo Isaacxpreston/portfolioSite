@@ -15,12 +15,12 @@ const Main = React.createClass({
 				} 
 			}	else {
 				return {
-					main: "landing ",
+					main: "landing",
 					content: "landing",
 					header: null
 				}
 			}
-		}
+		} //FUCK
 		return (
 			<div className={toggleClass().main}>
 				{toggleClass().header}
@@ -38,6 +38,7 @@ function mapStatetoProps (state=[]) {
 		dummy: state.dummy,
 		user: state.user,
 		visibility: state.visibility,
+		displaySize: state.displaySize,
 		myProjects: state.myProjects
 	}
 }
@@ -45,4 +46,3 @@ function mapStatetoProps (state=[]) {
 const MainWrapper = connect(mapStatetoProps)(Main);
 
 export default MainWrapper;
-
