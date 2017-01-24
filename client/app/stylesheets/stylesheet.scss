@@ -1,7 +1,7 @@
 .main {
   background: red;
   margin: 25 auto; 
-  overflow: scroll;
+  overflow: hidden;
   height: 85%;
   width: 85%;
   border: 20px solid black;
@@ -10,20 +10,51 @@
 .navBar {
   background: yellow;
   width: 20%;
-  height: 100%;
+  height: 85%;
   float: left
+}
+
+.navButton {
+  background: red;
+  height: 25%;
+  border: 20px solid blue;
+}
+
+.navButton:hover {
+  background: blue
 }
 
 .content {
   background: lime;
   width: 80%;
-  height: 100%;
+  height: 85%;
+  overflow: scroll;
   float: right;
 }
 
 .project {
-  background: blue
+  background: blue;
+  height: 500px;
+  overflow: hidden;
+  border: 20px solid orange;
 }
+
+.projectThumb {
+  float: right;
+  background: purple;
+  border: 20px solid black;
+  width: 50%;
+  height: 70%
+}
+
+.projectText {
+  float: left;
+  background: pink;
+  border: 20px solid black;
+  width: 40%;
+  height: 70%
+}
+
 .visible {
   opacity: 1;
   animation: show 1s

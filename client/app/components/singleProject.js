@@ -6,10 +6,10 @@ const SingleProject = React.createClass({
 		return (
 			<div className="project">
 				<h1>{this.props.details.name}</h1>
-				<div>
+				<div className="projectThumb">
 					<img src="*" alt="A THUMBNAIL OF THE PROJECT" />
 				</div>
-				<div>
+				<div className="projectText">
 					<p>{this.props.details.url}</p>
 					<p>{this.props.details.description}</p>
 				</div>

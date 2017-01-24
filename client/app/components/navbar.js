@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router'
+import NavButton from './navButton.js'
 
 const NavBar = React.createClass({
 	render() {
@@ -9,14 +10,9 @@ const NavBar = React.createClass({
 
 		return (
 			<div className="navBar">
-				<div>
-				<Link to="/projects">-Recent Work</Link>
-				<br />
-				<Link to="/about">-About</Link>
-				<br />
-				<Link to="/contact">-Contact</Link>
-				<br />
-				</div>
+				<NavButton url="/projects" title="recent work" />
+				<NavButton url="/about" title="about me" />
+				<NavButton url="/contact" title="contact" />
 			</div>
 		)
 	}
