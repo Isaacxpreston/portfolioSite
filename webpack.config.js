@@ -35,6 +35,13 @@ var config = {
         include: path.join(__dirname, 'client/app'),
         loaders: [ 'style', 'css', 'sass' ]
       },
+      {
+        test: /\.(ttf|svg|eot)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[hash].[ext]',
+        },
+      },
       // { test: /\.css$/, loader: "style-loader!css-loader" },
       // {
       //   test: /\.(jpg|png)$/,

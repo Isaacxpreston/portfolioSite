@@ -13,7 +13,9 @@ const Projects = React.createClass({
 		}
 		return (
 			<div className="project">
-				<h1>Recent Work</h1>
+				<div className="pageTitle">
+					<h1>Recent Work</h1>
+				</div>
 				{showProjects()}
 			</div>
 		)
