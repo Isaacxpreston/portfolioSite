@@ -6,7 +6,6 @@ import Portfolio from './portfolio.js'
 import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_actions.js'
-// import {alikeMeClicked, songspaceClicked} from '../actions/portfolio_icons_actions.js'
 
 const Main = React.createClass({
 
@@ -21,14 +20,6 @@ const Main = React.createClass({
 	aboutMeClicked () {
 		this.props.dispatch(aboutMeClicked())
 	},
-
-	// alikeMeClicked () {
-	// 	this.props.dispatch(alikeMeClicked())
-	// },
-
-	// songspaceClicked () {
-	// 	this.props.dispatch(songspaceClicked())
-	// },
 
 	render() { //todo- move portfolio to external component
 		return (

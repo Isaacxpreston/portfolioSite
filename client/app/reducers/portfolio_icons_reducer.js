@@ -14,5 +14,11 @@ export function portfolioIconsReducer (state= {
       songspace: "songspace-folder songspace-folder-selected"
     }
 	}
+  // if(action.type === 'CLICKED_AWAY') {
+  //   return {
+  //     alike_me: "alike-me-folder",
+  //     songspace: "songspace-folder"
+  //   }
+	// }
 	return state;
 }

@@ -101,3 +101,13 @@ body {
 .songspace-folder-selected {
   background-image: url("./images/songspace_folder_selected.png");
 }
+
+.portfolio-content {
+  position: absolute;
+  overflow: scroll;
+  top: 115px;
+  left: 205px;
+  height: 407px;
+  width: 654px;
+  border: 2px solid black;
+}
