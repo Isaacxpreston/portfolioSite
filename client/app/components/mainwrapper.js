@@ -24,20 +24,21 @@ import {DraggableCore} from 'react-draggable'; // <DraggableCore>
 // })
 
 const Main = React.createClass({
-	render() {
+	render() { //todo - move images to css
 		return (
 			<div>
 				<Draggable axis="both" handle=".handle">
 					<div className="portfolio handle"></div>
 				</Draggable>
 				<Draggable axis="both" handle=".handle">
-					<div className="handle">
-						<img src={require('../stylesheets/images/my_portfolio.png')} />
+					<div className="my-portfolio handle">
 					</div>
 				</Draggable>
 				<br />
-				<img src={require('../stylesheets/images/about_me.png')} />
-				<br />
+				<Draggable axis="both" handle=".handle">
+					<div className="about-me handle">
+					</div>
+				</Draggable>
 			<Menu />
 			</div>
 		)
