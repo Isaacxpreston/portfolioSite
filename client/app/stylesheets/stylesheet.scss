@@ -63,6 +63,13 @@ body {
   animation: showContent 1s
 }
 
+.contentHidden {
+  width: 100%;
+  animation: hideContent 1s
+}
+
+//todo-- add a contentDefault class and a navBarDefault class without animations
+
 @keyframes showContent {
   from {
     width: 100%

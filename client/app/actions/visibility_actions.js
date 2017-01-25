@@ -21,3 +21,11 @@ export function hideNavBar () {
     type: "HIDE_NAVBAR"
   }
 }
+
+//////////////////////////////////
+
+export function toggleNavBar () {
+  return {
+    type: "TOGGLE_NAVBAR"
+  }
+}

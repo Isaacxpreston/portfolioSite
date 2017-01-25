@@ -5,7 +5,6 @@ import SingleProject from './singleProject.js'
 const Projects = React.createClass({
 	render() {
 		const showProjects = () => {
-			console.log(this.props)
 			return this.props.myProjects.map((project) => {
 				let indexOfProject = this.props.myProjects.indexOf(project)
 				return (

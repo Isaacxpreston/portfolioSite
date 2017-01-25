@@ -5,18 +5,19 @@ import {setVisibilityHidden, setVisibility, showNavBar, hideNavBar} from "../act
 
 const Landing = React.createClass({
   redirect () {
-		setTimeout(() => {
-			this.props.dispatch(setVisibilityHidden())
-		}, 1000)
-  	setTimeout(() => {
-			this.props.dispatch(showNavBar())
-			this.props.dispatch(setVisibility())
-      browserHistory.push('/projects')
-    }, 2000)  
+		// setTimeout(() => {
+		// 	this.props.dispatch(setVisibilityHidden())
+		// }, 1000)
+  	// setTimeout(() => {
+		// 	this.props.dispatch(showNavBar())
+		// 	this.props.dispatch(setVisibility())
+    //   browserHistory.push('/projects')
+    // }, 2000)
+		browserHistory.push('/projects')
   },
 
 	componentDidMount () {
-		this.props.dispatch(hideNavBar())
+		// this.props.dispatch(hideNavBar())
 		this.redirect()
 	},
 

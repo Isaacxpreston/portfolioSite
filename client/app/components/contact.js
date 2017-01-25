@@ -1,13 +1,7 @@
 import React from 'react'
-// import {setUser} from "../actions/dummy_actions.js"
 
 const Contact = React.createClass({
-	// componentDidMount () {
-	// 	console.log(this.props, this.state, "dummycomp mount")
-	// 	this.props.dispatch(setUser('someone'))
-	// },
 	render() {
-		// console.log(this.props, this.state, "dummycomp")
 		return (
 			<div className="project">
 				<h1>Contact</h1>
