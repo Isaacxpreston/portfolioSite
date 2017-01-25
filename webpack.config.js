@@ -42,6 +42,13 @@ var config = {
           name: 'fonts/[hash].[ext]',
         },
       },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 25000,
+        },
+      },
       // { test: /\.css$/, loader: "style-loader!css-loader" },
       // {
       //   test: /\.(jpg|png)$/,

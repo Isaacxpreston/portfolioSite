@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-  // background: red;
+  //background: red;
   margin: 25 auto; 
   overflow: hidden;
   height: 85%;
@@ -185,16 +185,6 @@ body {
   }
 }
 
-// .diagonal {
-//   position: relative;
-//   color: black;
-//   //border: 20px solid transparent;
-//   height: 33%;
-//   overflow: hidden;
-//   text-align: center;
-//   z-index: 1;
-// }
-
 .diagonal {
   // background: white;
   height: 33%;
@@ -202,24 +192,3 @@ body {
   // margin-top: 20px;
   // margin-bottom: 20px
 }
-
-// .diagonal:after {
-//   content: "";
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   width: 500%;
-//   height: 500%;
-//   background: white;
-//   z-index: -1;
-//   transform-origin: 0% 0%;
-//   transform: translateX(-15%) translateY(10%) rotate(-45deg);
-//   transition: ease .4s;
-// }
-// .diagonal:hover::after {
-//   transform: translateY(10%) translateX(20%) rotate(-45deg);
-// }
-
-// .diagonalText {
-//   margin: auto;
-// }

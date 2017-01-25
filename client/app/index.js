@@ -3,6 +3,8 @@ import {render} from 'react-dom'
 import {Router, Link, browserHistory, Route, IndexRoute} from 'react-router'
 import {Provider} from 'react-redux'
 require('./stylesheets/stylesheet.scss')
+require('./stylesheets/windows_styles.scss')
+// require('./stylesheets/images')
 
 //components
 import store, {history} from './store.js'
