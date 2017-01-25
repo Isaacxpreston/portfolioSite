@@ -1,42 +1,39 @@
 import React from 'react'
 import {Link, browserHistory} from 'react-router'
 import {connect} from 'react-redux'
-import {toggleNavBar} from '../actions/visibility_actions.js'
-import NavBar from './navbar.js'
 import Menu from './menu.js'
-
-import Draggable from 'react-draggable'; // The default 
-import {DraggableCore} from 'react-draggable'; // <DraggableCore>
-
-// const Main = React.createClass({
-// 	render() {
-// 		return (
-// 			<div className={this.props.visibility.mainClass}>
-// 				<h1>Isaac Preston</h1>
-// 				<NavBar className={this.props.visibility.navBarClass} {...this.props} />
-// 				<div className="toggleBar" onClick={() => {this.props.dispatch(toggleNavBar())}}></div>
-// 				<div className={this.props.visibility.contentClass}>
-// 					{ React.cloneElement(this.props.children, this.props) }
-// 				</div>
-// 			</div>
-// 		)
-// 	}
-// })
+import Draggable from 'react-draggable';
+import {DraggableCore} from 'react-draggable';
+import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_actions.js'
 
 const Main = React.createClass({
-	render() { //todo - move images to css
+
+	clickedAway () {
+		this.props.dispatch(clickedAway())
+	},
+
+	myPortfolioClicked () {
+		this.props.dispatch(myPortfolioClicked())
+	},
+
+	aboutMeClicked () {
+		this.props.dispatch(aboutMeClicked())
+	},
+
+	render() {
 		return (
 			<div>
+				<div className="background" onClick={this.clickedAway}></div>
 				<Draggable axis="both" handle=".handle">
 					<div className="portfolio handle"></div>
 				</Draggable>
-				<Draggable axis="both" handle=".handle">
-					<div className="my-portfolio handle">
+				<Draggable axis="both" handle=".handle" onMouseDown={this.myPortfolioClicked}>
+					<div className={this.props.iconsReducer.my_portfolio}>
 					</div>
 				</Draggable>
 				<br />
-				<Draggable axis="both" handle=".handle">
-					<div className="about-me handle">
+				<Draggable axis="both" handle=".handle" onMouseDown={this.aboutMeClicked}>
+					<div className={this.props.iconsReducer.about_me}>
 					</div>
 				</Draggable>
 			<Menu />
@@ -51,7 +48,8 @@ function mapStatetoProps (state=[]) {
 		user: state.user,
 		visibility: state.visibility,
 		displaySize: state.displaySize,
-		myProjects: state.myProjects
+		myProjects: state.myProjects,
+		iconsReducer: state.iconsReducer
 	}
 }
 
