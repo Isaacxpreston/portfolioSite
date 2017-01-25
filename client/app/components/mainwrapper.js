@@ -20,22 +20,30 @@ const Main = React.createClass({
 		this.props.dispatch(aboutMeClicked())
 	},
 
-	render() {
+	render() { //todo- move portfolio to external component
 		return (
 			<div>
+
 				<div className="background" onClick={this.clickedAway}></div>
+				
 				<Draggable axis="both" handle=".handle">
-					<div className="portfolio handle"></div>
+					<div className="portfolio handle">
+						<div className="alike-me-folder"></div>
+					</div>
 				</Draggable>
+
 				<Draggable axis="both" handle=".handle" onMouseDown={this.myPortfolioClicked}>
 					<div className={this.props.iconsReducer.my_portfolio}>
 					</div>
 				</Draggable>
+
 				<br />
+
 				<Draggable axis="both" handle=".handle" onMouseDown={this.aboutMeClicked}>
 					<div className={this.props.iconsReducer.about_me}>
 					</div>
 				</Draggable>
+
 			<Menu />
 			</div>
 		)

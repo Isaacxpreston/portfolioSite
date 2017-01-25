@@ -1,5 +1,11 @@
+body {
+  overflow: hidden;
+}
+
 .background {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: #008181;
@@ -8,8 +14,10 @@
 
 .menu {
   position: absolute;
-  width: 85%;
+  width: 91%;
+  left: 0;
   bottom: 0;
+  z-index: 5;
 }
 
 .menu-left {
@@ -17,7 +25,7 @@
   width: 192px;
   margin-top: -28px;
   background-image: url("./images/menu_left.png");
-  z-index: 3
+  z-index: 2
 }
 
 .menu-right {
@@ -43,7 +51,7 @@
   width: 865px;
   height: 551px;
   background-image: url("./images/portfolio_display.png");
-  z-index: 4
+  z-index: 3
 }
 
 .my-portfolio{
@@ -64,4 +72,18 @@
 
 .about-me-selected {
   background-image: url("./images/about_me_selected.png");
+}
+
+.alike-me-folder {
+  position: absolute;
+  width: 118px;
+  height: 18px;
+  top: 218px;
+  left: 34px;
+  background-image: url("./images/alike_me_folder.png");
+  z-index: 4;
+}
+
+.alike-me-folder-selected {
+  background-image: url("./images/alike_me_folder_selected.png");
 }
