@@ -28,3 +28,13 @@
   background-image: url("./images/menu_repeat.png");
   z-index: -1
 }
+
+.portfolio {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  width: 865px;
+  height: 551px;
+  background-image: url("./images/portfolio_display.png");
+  z-index: 4
+}

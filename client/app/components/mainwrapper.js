@@ -5,6 +5,9 @@ import {toggleNavBar} from '../actions/visibility_actions.js'
 import NavBar from './navbar.js'
 import Menu from './menu.js'
 
+import Draggable from 'react-draggable'; // The default 
+import {DraggableCore} from 'react-draggable'; // <DraggableCore>
+
 // const Main = React.createClass({
 // 	render() {
 // 		return (
@@ -24,9 +27,17 @@ const Main = React.createClass({
 	render() {
 		return (
 			<div>
-			<img src={require('../stylesheets/images/my_portfolio.png')} />
-			<br />
-			<img src={require('../stylesheets/images/about_me.png')} />
+				<Draggable axis="both" handle=".handle">
+					<div className="portfolio handle"></div>
+				</Draggable>
+				<Draggable axis="both" handle=".handle">
+					<div className="handle">
+						<img src={require('../stylesheets/images/my_portfolio.png')} />
+					</div>
+				</Draggable>
+				<br />
+				<img src={require('../stylesheets/images/about_me.png')} />
+				<br />
 			<Menu />
 			</div>
 		)
