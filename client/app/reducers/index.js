@@ -6,6 +6,7 @@ import {visibility} from './visibility_reducer.js'
 import {myProjects} from './myProjects.js'
 import {displaySize} from './display_size_reducer.js'
 import {iconsReducer} from './icons_reducer.js'
+import {portfolioIconsReducer} from './portfolio_icons_reducer.js'
 
 
 const appReducer = combineReducers({
@@ -15,6 +16,7 @@ const appReducer = combineReducers({
   displaySize,
   myProjects,
   iconsReducer,
+  portfolioIconsReducer,
   routing: routerReducer
 })
 

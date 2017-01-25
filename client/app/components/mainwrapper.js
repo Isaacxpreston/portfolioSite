@@ -5,6 +5,7 @@ import Menu from './menu.js'
 import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_actions.js'
+import {alikeMeClicked, songspaceClicked} from '../actions/portfolio_icons_actions.js'
 
 const Main = React.createClass({
 
@@ -20,6 +21,14 @@ const Main = React.createClass({
 		this.props.dispatch(aboutMeClicked())
 	},
 
+	alikeMeClicked () {
+		this.props.dispatch(alikeMeClicked())
+	},
+
+	songspaceClicked () {
+		this.props.dispatch(songspaceClicked())
+	},
+
 	render() { //todo- move portfolio to external component
 		return (
 			<div>
@@ -28,19 +37,31 @@ const Main = React.createClass({
 				
 				<Draggable axis="both" handle=".handle">
 					<div className="portfolio handle">
-						<div className="alike-me-folder"></div>
+						<div
+							className={this.props.portfolioIconsReducer.alike_me}
+							onClick={this.alikeMeClicked}
+						></div>
+						<div
+							className={this.props.portfolioIconsReducer.songspace}
+							onClick={this.songspaceClicked}
+						></div>
 					</div>
 				</Draggable>
 
 				<Draggable axis="both" handle=".handle" onMouseDown={this.myPortfolioClicked}>
-					<div className={this.props.iconsReducer.my_portfolio}>
+					<div 
+						className={this.props.iconsReducer.my_portfolio}
+						onDoubleClick={()=>{console.log("DOUBLE CLICK BITCH")}}>
 					</div>
 				</Draggable>
 
 				<br />
 
 				<Draggable axis="both" handle=".handle" onMouseDown={this.aboutMeClicked}>
-					<div className={this.props.iconsReducer.about_me}>
+					<div
+						className={this.props.iconsReducer.about_me}
+						onDoubleClick={()=>{console.log("DOUBLE CLICK BITCH")}}
+					>
 					</div>
 				</Draggable>
 
@@ -57,7 +78,8 @@ function mapStatetoProps (state=[]) {
 		visibility: state.visibility,
 		displaySize: state.displaySize,
 		myProjects: state.myProjects,
-		iconsReducer: state.iconsReducer
+		iconsReducer: state.iconsReducer,
+		portfolioIconsReducer: state.portfolioIconsReducer
 	}
 }
 

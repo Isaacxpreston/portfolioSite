@@ -87,3 +87,17 @@ body {
 .alike-me-folder-selected {
   background-image: url("./images/alike_me_folder_selected.png");
 }
+
+.songspace-folder {
+  position: absolute;
+  width: 128px;
+  height: 18px;
+  top: 236px;
+  left: 34px;
+  background-image: url("./images/songspace_folder.png");
+  z-index: 4;
+}
+
+.songspace-folder-selected {
+  background-image: url("./images/songspace_folder_selected.png");
+}
