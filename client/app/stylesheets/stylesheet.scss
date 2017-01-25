@@ -12,9 +12,16 @@ body {
   border: 20px solid black;
 }
 
+.toggleBar {
+  background: grey;
+  width: 5%;
+  height: 85%;
+  display: inline-block;
+}
+
 .navBar {
   background: yellow;
-  width: 20%;
+  width: 15%;
   height: 85%;
   float: left;
   animation: showNav 1s
@@ -30,13 +37,13 @@ body {
     width: 0%
   }
   to {
-    width: 20%
+    width: 15%
   }
 }
 
 @keyframes hideNav {
   from {
-    width: 20%
+    width: 15%
   }
   to {
     width: 0%
@@ -50,8 +57,8 @@ body {
 .navButton {
   background: red;
   height: 25%;
-  border: 20px solid blue;
-  display: none; //make this on click
+  //border: 20px solid blue;
+  //display: none; //make this on click
 }
 
 .content {
@@ -64,7 +71,7 @@ body {
 }
 
 .contentHidden {
-  width: 100%;
+  width: 95%;
   animation: hideContent 1s
 }
 
@@ -72,7 +79,7 @@ body {
 
 @keyframes showContent {
   from {
-    width: 100%
+    width: 95%
   }
   to {
     width: 80%
@@ -84,7 +91,7 @@ body {
     width: 80%
   }
   to {
-    width: 100%
+    width: 95%
   }
 }
 
@@ -156,12 +163,13 @@ body {
 .diagonal {
   position: relative;
   color: black;
-  border: 20px solid black;
+  //border: 20px solid transparent;
   height: 25%;
   overflow: hidden;
   text-align: center;
   z-index: 1;
 }
+
 .diagonal:after {
   content: "";
   position: absolute;

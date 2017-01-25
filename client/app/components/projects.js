@@ -1,6 +1,5 @@
 import React from 'react'
 import SingleProject from './singleProject.js'
-// import {setUser} from "../actions/dummy_actions.js"
 
 const Projects = React.createClass({
 	render() {
