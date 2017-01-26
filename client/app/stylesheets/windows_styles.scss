@@ -15,7 +15,6 @@ body {
   width: 100%;
   height: 100%;
   background: #008181;
-  // z-index: -4;
 }
 
 .menu {
@@ -23,7 +22,7 @@ body {
   width: 91%;
   left: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 6;
 }
 
 .menu-left {
@@ -117,4 +116,40 @@ body {
   width: 654px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
+}
+
+.about-me-notepad {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  width: 559px;
+  height: 379px;
+  background-image: url("./images/about_me_notepad.png");
+  z-index: 5
+}
+
+.about-me-content {
+  position: absolute;
+  overflow: scroll;
+  top: 44px;
+  left: 5px;
+  height: 300px;
+  width: 520px;
+  border: 10px solid transparent;
+}
+
+.profilePic {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+  border: 20px solid white;
+  background-image: url("./images/profilepic2.png");
+  background-size: cover;
+}
+
+.bio {
+  display: inline-block;
+  vertical-align: top;
+  border: 20px solid transparent;
 }
