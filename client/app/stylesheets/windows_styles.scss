@@ -163,8 +163,8 @@ body {
   bottom: 28px;
   left: 0;
   width: 187px;
-  height: 342px;
-  background-image: url("./images/menu_popup.png");
+  height: 207px;
+  background-image: url("./images/menu_popup2.png");
   z-index: 7;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 .linkedIn {
-  bottom: 295px;
+  bottom: 160px;
   background-image: url('./images/linkedIn.png');
 }
 
@@ -186,12 +186,39 @@ body {
 }
 
 .facebook {
-  bottom: 263px;
+  bottom: 128px;
   background-image: url('./images/facebook.png');
 }
 
 .facebook:hover {
   background-image: url('./images/facebook_selected.png')
+}
+
+.github {
+  bottom: 96px;
+  background-image: url('./images/github.png');
+}
+
+.github:hover {
+  background-image: url('./images/github_selected.png');
+}
+
+.twitter {
+  bottom: 64px;
+  background-image: url('./images/twitter.png');
+}
+
+.twitter:hover {
+  background-image: url('./images/twitter_selected.png');
+}
+
+.email {
+  bottom: 32px;
+  background-image: url('./images/email.png');
+}
+
+.email:hover {
+  background-image: url('./images/email_selected.png');
 }
 
 .hidden {

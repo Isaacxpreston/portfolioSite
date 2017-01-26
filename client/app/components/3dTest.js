@@ -38,7 +38,7 @@ class Simple extends React.Component {
     return (
     <div
       style = {{
-        border: '20px solid black',
+        // border: '20px solid black',
         width: width,
         height: height
       }}

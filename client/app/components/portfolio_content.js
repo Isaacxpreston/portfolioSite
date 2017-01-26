@@ -1,4 +1,5 @@
 import React from 'react'
+import Simple from './3dTest.js'
 
 const Content = React.createClass({
 	render() {
@@ -13,6 +14,7 @@ const Content = React.createClass({
           <p>{project.date}</p>
           <p>{project.url}</p>
           <p>{project.description}</p>
+          <Simple />
         </div>
       )
     } else {

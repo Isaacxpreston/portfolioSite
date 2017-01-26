@@ -32,11 +32,14 @@ const Main = React.createClass({
 	},
 
 	render() {
-
 		//TODO
 		//show divs and add an animation as well as close button functionality
 		//change z-index on clicked window to move it to top
 		//make all windows with relative percentage sizes so they can scale....MAYBE.
+
+		//dispatch clicked away on portfolio and about me, and have listener on menu popup
+		//make a css loader bar thing for the alike me thumbnail
+		//make some 3d sound bars for the songspace thumbnail
 
 		return (
 			<div>
