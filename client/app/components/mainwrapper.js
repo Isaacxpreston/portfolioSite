@@ -21,7 +21,9 @@ const Main = React.createClass({
 		this.props.dispatch(aboutMeClicked())
 	},
 
-	render() { //todo- move portfolio to external component
+	render() {
+		//todo- make icons clickable
+		//show divs and add an animation as well as close button functionality
 		return (
 			<div>
 				<div className="background" onClick={this.clickedAway}></div>

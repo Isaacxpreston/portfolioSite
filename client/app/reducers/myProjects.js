@@ -7,8 +7,8 @@ export function myProjects () {
       date: "2017"
     },
     {
-      name: "SongSpace",
-      url: "songspace.me",
+      name: "Songspace",
+      url: "TBD",
       description: "music visualiser",
       date: "2016"
     }

@@ -2,6 +2,7 @@ import React from 'react'
 import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {alikeMeClicked, songspaceClicked} from '../actions/portfolio_icons_actions.js'
+import Content from './portfolio_content.js'
 
 const Portfolio = React.createClass({
 
@@ -26,54 +27,7 @@ const Portfolio = React.createClass({
               className={this.props.portfolioIconsReducer.songspace}
               onClick={this.songspaceClicked}
             ></div>
-
-            <div className="portfolio-content">
-            <h1>
-            asklfjksdajk  kaskdjfakjsdf
-            asdkfasjknfkasdfk kasjkdfkaoSDFKJkdfk
-            askdfnsadfnip n;923908nuf;892unjfsdkn
-            askjsdnaf
-            asdkfsadf
-            sadfjdsjfjdsfj
-            sdjfdfsjfds
-            sfdjdsjfjjdf           asklfjksdajk  kaskdjfakjsdf
-            asdkfasjknfkasdfk kasjkdfkaoSDFKJkdfk
-            askdfnsadfnip n;923908nuf;892unjfsdkn
-            askjsdnaf
-            asdkfsadf
-            sadfjdsjfjdsfj
-            sdjfdfsjfds
-            sfdjdsjfjjdf           asklfjksdajk  kaskdjfakjsdf
-            asdkfasjknfkasdfk kasjkdfkaoSDFKJkdfk
-            askdfnsadfnip n;923908nuf;892unjfsdkn
-            askjsdnaf
-            asdkfsadf
-            sadfjdsjfjdsfj
-            sdjfdfsjfds
-            sfdjdsjfjjdf           asklfjksdajk  kaskdjfakjsdf
-            asdkfasjknfkasdfk kasjkdfkaoSDFKJkdfk
-            askdfnsadfnip n;923908nuf;892unjfsdkn
-            askjsdnaf
-            asdkfsadf
-            sadfjdsjfjdsfj
-            sdjfdfsjfds
-            sfdjdsjfjjdf           asklfjksdajk  kaskdjfakjsdf
-            asdkfasjknfkasdfk kasjkdfkaoSDFKJkdfk
-            askdfnsadfnip n;923908nuf;892unjfsdkn
-            askjsdnaf
-            asdkfsadf
-            sadfjdsjfjdsfj
-            sdjfdfsjfds
-            sfdjdsjfjjdf           asklfjksdajk  kaskdjfakjsdf
-            asdkfasjknfkasdfk kasjkdfkaoSDFKJkdfk
-            askdfnsadfnip n;923908nuf;892unjfsdkn
-            askjsdnaf
-            asdkfsadf
-            sadfjdsjfjdsfj
-            sdjfdfsjfds
-            sfdjdsjfjjdf
-            </h1>
-            </div>
+            <Content {...this.props} content={this.props.portfolioIconsReducer.content} />
           </div>
         </Draggable>
       </div>

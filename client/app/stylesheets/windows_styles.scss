@@ -1,4 +1,10 @@
+@font-face {
+    font-family: "WINDOWS";
+    src: url("REFSAN.ttf") format("truetype");
+}
+
 body {
+  font-family: "WINDOWS";
   overflow: hidden;
 }
 
@@ -109,5 +115,6 @@ body {
   left: 205px;
   height: 407px;
   width: 654px;
-  border: 2px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
 }
