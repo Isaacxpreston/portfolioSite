@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "WINDOWS";
-    src: url("REFSAN.ttf") format("truetype");
+  font-family: "WINDOWS";
+  src: url("REFSAN.ttf") format("truetype");
 }
 
 body {
@@ -31,6 +31,10 @@ body {
   margin-top: -28px;
   background-image: url("./images/menu_left.png");
   z-index: 2
+}
+
+.menu-left-selected {
+  background-image: url("./images/menu_left_selected.png")
 }
 
 .menu-right {
@@ -152,6 +156,16 @@ body {
   display: inline-block;
   vertical-align: top;
   border: 20px solid transparent;
+}
+
+.popup {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  width: 187px;
+  height: 342px;
+  background-image: url("./images/menu_popup.png");
+  z-index: 7;
 }
 
 .hidden {

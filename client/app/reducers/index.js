@@ -9,6 +9,7 @@ import {iconsReducer} from './icons_reducer.js'
 import {portfolioIconsReducer} from './portfolio_icons_reducer.js'
 import {windowReducer} from './window_reducer.js'
 import {topReducer} from './top_reducer.js'
+import {menuReducer} from './menu_reducer.js'
 
 
 const appReducer = combineReducers({
@@ -21,6 +22,7 @@ const appReducer = combineReducers({
   portfolioIconsReducer,
   windowReducer,
   topReducer,
+  menuReducer,
   routing: routerReducer
 })
 

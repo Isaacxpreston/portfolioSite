@@ -32,6 +32,7 @@ const Main = React.createClass({
 	},
 
 	render() {
+
 		//TODO
 		//show divs and add an animation as well as close button functionality
 		//change z-index on clicked window to move it to top
@@ -61,7 +62,7 @@ const Main = React.createClass({
 					</div>
 				</Draggable>
 
-				<Menu />
+				<Menu {...this.props} />
 			</div>
 		)
 	}
@@ -77,6 +78,7 @@ function mapStatetoProps (state=[]) {
 		iconsReducer: state.iconsReducer,
 		portfolioIconsReducer: state.portfolioIconsReducer,
 		windowReducer: state.windowReducer,
+		menuReducer: state.menuReducer,
 		topReducer: state.topReducer
 	}
 }
