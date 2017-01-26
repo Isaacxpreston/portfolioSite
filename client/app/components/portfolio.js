@@ -18,7 +18,7 @@ const Portfolio = React.createClass({
     return (
       <div>
         <Draggable axis="both" handle=".handle">
-          <div className="portfolio handle">
+          <div className={this.props.windowReducer.portfolio}>
             <div
               className={this.props.portfolioIconsReducer.alike_me}
               onClick={this.alikeMeClicked}

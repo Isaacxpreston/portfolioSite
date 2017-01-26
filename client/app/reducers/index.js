@@ -7,6 +7,7 @@ import {myProjects} from './myProjects.js'
 import {displaySize} from './display_size_reducer.js'
 import {iconsReducer} from './icons_reducer.js'
 import {portfolioIconsReducer} from './portfolio_icons_reducer.js'
+import {windowReducer} from './window_reducer.js'
 
 
 const appReducer = combineReducers({
@@ -17,6 +18,7 @@ const appReducer = combineReducers({
   myProjects,
   iconsReducer,
   portfolioIconsReducer,
+  windowReducer,
   routing: routerReducer
 })
 

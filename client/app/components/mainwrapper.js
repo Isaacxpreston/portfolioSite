@@ -7,6 +7,7 @@ import AboutMe from './about_me.js'
 import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_actions.js'
+import {portfolioIconClicked, aboutMeIconClicked} from '../actions/window_actions.js'
 
 const Main = React.createClass({
 
@@ -22,6 +23,14 @@ const Main = React.createClass({
 		this.props.dispatch(aboutMeClicked())
 	},
 
+	aboutMeIconClicked () {
+		this.props.dispatch(aboutMeIconClicked())
+	},
+
+	portfolioIconClicked () {
+		this.props.dispatch(portfolioIconClicked())
+	},
+
 	render() {
 		//todo- make icons clickable
 		//show divs and add an animation as well as close button functionality
@@ -31,12 +40,12 @@ const Main = React.createClass({
 				<div className="background" onClick={this.clickedAway}></div>
 
 				<Portfolio {...this.props} />
-				<AboutMe />
+				<AboutMe {...this.props} />
 
 				<Draggable axis="both" handle=".handle" onMouseDown={this.myPortfolioClicked}>
 					<div 
 						className={this.props.iconsReducer.my_portfolio}
-						onDoubleClick={()=>{console.log("DOUBLE CLICK BITCH")}}>
+						onDoubleClick={this.portfolioIconClicked}>
 					</div>
 				</Draggable>
 
@@ -45,7 +54,7 @@ const Main = React.createClass({
 				<Draggable axis="both" handle=".handle" onMouseDown={this.aboutMeClicked}>
 					<div
 						className={this.props.iconsReducer.about_me}
-						onDoubleClick={()=>{console.log("DOUBLE CLICK BITCH")}}
+						onDoubleClick={this.aboutMeIconClicked}
 					>
 					</div>
 				</Draggable>
@@ -64,7 +73,8 @@ function mapStatetoProps (state=[]) {
 		displaySize: state.displaySize,
 		myProjects: state.myProjects,
 		iconsReducer: state.iconsReducer,
-		portfolioIconsReducer: state.portfolioIconsReducer
+		portfolioIconsReducer: state.portfolioIconsReducer,
+		windowReducer: state.windowReducer
 	}
 }
 

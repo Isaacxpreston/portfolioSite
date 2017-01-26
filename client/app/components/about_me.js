@@ -7,7 +7,7 @@ const AboutMe = React.createClass({
     return (
       <div>
         <Draggable axis="both" handle=".handle">
-          <div className="about-me-notepad handle">
+          <div className={this.props.windowReducer.about_me}>
             <div className="about-me-content">
               <div className="bio">
                 <p>My name is Isaac and this is my bio</p>
