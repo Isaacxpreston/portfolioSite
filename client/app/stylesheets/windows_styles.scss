@@ -57,9 +57,9 @@ body {
   position: absolute;
   top: 10px;
   left: 200px;
-  width: 865px;
-  height: 551px;
-  background-image: url("./images/portfolio_display.png");
+  width: 869px;
+  height: 555px;
+  background-image: url("./images/portfolio_display2.png");
   z-index: 3
 }
 
@@ -87,8 +87,8 @@ body {
   position: absolute;
   width: 118px;
   height: 18px;
-  top: 218px;
-  left: 34px;
+  top: 221px;
+  left: 38px;
   background-image: url("./images/alike_me_folder.png");
   z-index: 4;
 }
@@ -101,8 +101,8 @@ body {
   position: absolute;
   width: 128px;
   height: 18px;
-  top: 236px;
-  left: 34px;
+  top: 239px;
+  left: 38px;
   background-image: url("./images/songspace_folder.png");
   z-index: 4;
 }
@@ -168,14 +168,30 @@ body {
   z-index: 7;
 }
 
-.linkedIn {
+.popup-option {
   position: absolute;
-  bottom: 295px;
   left: 23px;
   width: 158px;
   height: 32px;
-  background-image: url('./images/linkedIn.png');
   z-index: 8;
+}
+
+.linkedIn {
+  bottom: 295px;
+  background-image: url('./images/linkedIn.png');
+}
+
+.linkedIn:hover {
+  background-image: url('./images/linkedIn_selected.png')
+}
+
+.facebook {
+  bottom: 263px;
+  background-image: url('./images/facebook.png');
+}
+
+.facebook:hover {
+  background-image: url('./images/facebook_selected.png')
 }
 
 .hidden {

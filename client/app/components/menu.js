@@ -10,7 +10,8 @@ const Menu = React.createClass({
 		return (
 			<div>
 				<div className={this.props.menuReducer.popup}></div>
-				<div className="linkedIn"></div>
+				<div className="popup-option linkedIn"></div>
+				<div className="popup-option facebook"></div>
 				<div className="menu">
 					<div className="menu-center"></div>
 					<div className="menu-right"></div>
