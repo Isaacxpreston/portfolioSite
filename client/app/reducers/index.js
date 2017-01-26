@@ -8,6 +8,7 @@ import {displaySize} from './display_size_reducer.js'
 import {iconsReducer} from './icons_reducer.js'
 import {portfolioIconsReducer} from './portfolio_icons_reducer.js'
 import {windowReducer} from './window_reducer.js'
+import {topReducer} from './top_reducer.js'
 
 
 const appReducer = combineReducers({
@@ -19,6 +20,7 @@ const appReducer = combineReducers({
   iconsReducer,
   portfolioIconsReducer,
   windowReducer,
+  topReducer,
   routing: routerReducer
 })
 

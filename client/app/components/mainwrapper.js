@@ -32,9 +32,11 @@ const Main = React.createClass({
 	},
 
 	render() {
-		//todo- make icons clickable
+		//TODO
 		//show divs and add an animation as well as close button functionality
 		//change z-index on clicked window to move it to top
+		//make all windows with relative percentage sizes so they can scale....MAYBE.
+
 		return (
 			<div>
 				<div className="background" onClick={this.clickedAway}></div>
@@ -74,7 +76,8 @@ function mapStatetoProps (state=[]) {
 		myProjects: state.myProjects,
 		iconsReducer: state.iconsReducer,
 		portfolioIconsReducer: state.portfolioIconsReducer,
-		windowReducer: state.windowReducer
+		windowReducer: state.windowReducer,
+		topReducer: state.topReducer
 	}
 }
 

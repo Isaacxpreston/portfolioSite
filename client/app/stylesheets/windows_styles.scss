@@ -22,7 +22,7 @@ body {
   width: 91%;
   left: 0;
   bottom: 0;
-  z-index: 6;
+  z-index: 10;
 }
 
 .menu-left {
@@ -156,5 +156,9 @@ body {
 
 .hidden {
   display: none;
-  opacity: 0
+  opacity: 0;
+}
+
+.top {
+  z-index: 6;
 }
