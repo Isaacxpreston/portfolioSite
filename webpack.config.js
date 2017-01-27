@@ -22,11 +22,6 @@ var config = {
   module : {
     loaders : [
       {
-        test : /\.jsx?/,
-        include : path.join(__dirname, 'client/app'),
-        loader : 'babel-loader'
-      },
-      {
         // test: /\.css$/,
         // include: path.join(__dirname, 'client/app'),
         // loaders: ['style-loader', 'css-loader']
@@ -47,6 +42,11 @@ var config = {
         options: {
           limit: 25000,
         },
+      },
+      {
+        test : /\.jsx?/,
+        include : path.join(__dirname, 'client/app'),
+        loader : 'babel-loader'
       },
       // { test: /\.css$/, loader: "style-loader!css-loader" },
       // {
