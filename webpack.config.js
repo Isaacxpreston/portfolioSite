@@ -26,7 +26,7 @@ var config = {
         // include: path.join(__dirname, 'client/app'),
         // loaders: ['style-loader', 'css-loader']
         test: /\.scss$/,
-        include: path.join(__dirname, 'client/app'),
+        //include: path.join(__dirname, 'client/app'),
         loaders: [ 'style', 'css', 'sass' ]
       },
       {
