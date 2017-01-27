@@ -4,6 +4,8 @@ import {DraggableCore} from 'react-draggable';
 import {aboutMeTop} from '../actions/top_actions.js'
 //import {clickedAway} from '../actions/icons_actions.js'
 import {menuClickedAway} from '../actions/menu_actions.js'
+import '../stylesheets/windows_styles.scss'
+
 
 
 const AboutMe = React.createClass({

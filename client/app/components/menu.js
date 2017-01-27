@@ -1,5 +1,7 @@
 import React from 'react'
 import {menuToggle} from '../actions/menu_actions.js'
+import '../stylesheets/windows_styles.scss'
+
 
 const Menu = React.createClass({
 	menuToggle () {

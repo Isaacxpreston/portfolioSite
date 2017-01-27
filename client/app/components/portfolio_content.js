@@ -1,4 +1,6 @@
 import React from 'react'
+import '../stylesheets/windows_styles.scss'
+
 
 const Content = React.createClass({
 

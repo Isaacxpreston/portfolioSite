@@ -22,12 +22,9 @@ var config = {
   module : {
     loaders : [
       {
-        // test: /\.css$/,
-        // include: path.join(__dirname, 'client/app'),
-        // loaders: ['style-loader', 'css-loader']
         test: /\.scss$/,
         //include: path.join(__dirname, 'client/app'),
-        loaders: [ 'style', 'css', 'sass' ]
+        loaders: [ 'style-loader', 'css-loader' ]
       },
       {
         test: /\.(ttf|svg|eot)$/,
@@ -48,14 +45,6 @@ var config = {
         include : path.join(__dirname, 'client/app'),
         loader : 'babel-loader'
       },
-      // { test: /\.css$/, loader: "style-loader!css-loader" },
-      // {
-      //   test: /\.(jpg|png)$/,
-      //   loader: 'file-loader',
-      //   options: {
-      //     name: '[path][name].[hash].[ext]'
-      //   }
-      // }
     ]
   },
   node: {
