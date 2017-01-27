@@ -20,7 +20,6 @@ var config = {
     new webpack.NoErrorsPlugin()
   ],
   module : {
-
     loaders : [
       {
         test : /\.jsx?/,
