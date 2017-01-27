@@ -10,7 +10,6 @@ import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_
 import {portfolioIconClicked, aboutMeIconClicked} from '../actions/window_actions.js'
 import {menuClickedAway} from '../actions/menu_actions.js'
 import {portfolioTop, aboutMeTop} from '../actions/top_actions.js'
-import '../stylesheets/windows_styles.scss'
 
 const Main = React.createClass({
 

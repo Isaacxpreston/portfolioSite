@@ -6,7 +6,6 @@ import {portfolioTop} from '../actions/top_actions.js'
 import {menuClickedAway} from '../actions/menu_actions.js'
 //import {clickedAway} from '../actions/icons_actions.js'
 import Content from './portfolio_content.js'
-import '../stylesheets/windows_styles.scss'
 
 
 const Portfolio = React.createClass({
