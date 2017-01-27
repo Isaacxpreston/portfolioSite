@@ -2,19 +2,22 @@ import React from 'react'
 import Simple from './3dTest.js'
 
 const Content = React.createClass({
-	render() {
+
+  navToLink (url) {
+    window.location.replace(url);
+  },
+
+	render () {
     const project = this.props.myProjects.filter((project) => {
       return project.name === this.props.content
     })[0]
     if (project) {
       return (
         <div className="portfolio-content">
-          <h1>{this.props.content}</h1>
-          <p>{project.name}</p>
+          <h1 onClick={this.navToLink.bind(this, project.url)}>{this.props.content}</h1>
           <p>{project.date}</p>
-          <p>{project.url}</p>
           <p>{project.description}</p>
-          <Simple />
+          <p>{project.tech}</p>
         </div>
       )
     } else {

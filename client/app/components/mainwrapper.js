@@ -8,11 +8,18 @@ import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_actions.js'
 import {portfolioIconClicked, aboutMeIconClicked} from '../actions/window_actions.js'
+import {menuClickedAway} from '../actions/menu_actions.js'
+import {portfolioTop, aboutMeTop} from '../actions/top_actions.js'
 
 const Main = React.createClass({
 
 	clickedAway () {
 		this.props.dispatch(clickedAway())
+		this.props.dispatch(menuClickedAway())
+	},
+
+	menuClickedAway () {
+		this.props.dispatch(menuClickedAway())
 	},
 
 	myPortfolioClicked () {
@@ -25,21 +32,20 @@ const Main = React.createClass({
 
 	aboutMeIconClicked () {
 		this.props.dispatch(aboutMeIconClicked())
+		this.props.dispatch(aboutMeTop())
 	},
 
 	portfolioIconClicked () {
 		this.props.dispatch(portfolioIconClicked())
+		this.props.dispatch(portfolioTop())
 	},
 
 	render() {
 		//TODO
-		//show divs and add an animation as well as close button functionality
-		//change z-index on clicked window to move it to top
-		//make all windows with relative percentage sizes so they can scale....MAYBE.
-
-		//dispatch clicked away on portfolio and about me, and have listener on menu popup
+		//make divs closeable
 		//make a css loader bar thing for the alike me thumbnail
 		//make some 3d sound bars for the songspace thumbnail
+		//make a landing page
 
 		return (
 			<div>
@@ -51,6 +57,7 @@ const Main = React.createClass({
 				<Draggable axis="both" handle=".handle" onMouseDown={this.myPortfolioClicked}>
 					<div 
 						className={this.props.iconsReducer.my_portfolio}
+						onClick={this.menuClickedAway}
 						onDoubleClick={this.portfolioIconClicked}>
 					</div>
 				</Draggable>
@@ -60,6 +67,7 @@ const Main = React.createClass({
 				<Draggable axis="both" handle=".handle" onMouseDown={this.aboutMeClicked}>
 					<div
 						className={this.props.iconsReducer.about_me}
+						onClick={this.menuClickedAway}
 						onDoubleClick={this.aboutMeIconClicked}
 					>
 					</div>
