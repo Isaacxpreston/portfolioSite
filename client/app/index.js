@@ -4,7 +4,7 @@ import {Router, Link, browserHistory, Route, IndexRoute} from 'react-router'
 import {Provider} from 'react-redux'
 
 import './stylesheets/windows_styles.scss'
-require('./stylesheets/windows_styles.scss')
+// require('./stylesheets/windows_styles.scss')
 
 //components
 import store, {history} from './store.js'
