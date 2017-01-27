@@ -1,5 +1,4 @@
 import React from 'react'
-import Simple from './3dTest.js'
 
 const Content = React.createClass({
 
