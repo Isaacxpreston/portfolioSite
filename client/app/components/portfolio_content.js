@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Content = React.createClass({
 
   navToLink (url) {
@@ -14,7 +13,9 @@ const Content = React.createClass({
     if (project) {
       return (
         <div className="portfolio-content">
-          <h1 onClick={this.navToLink.bind(this, project.url)}>{this.props.content}</h1>
+          <h1>{this.props.content}</h1>
+          <p onClick={this.navToLink.bind(this, project.url)}>Demo</p>
+          <p>Github</p>
           <p>{project.date}</p>
           <p>{project.description}</p>
           <p>{project.tech}</p>

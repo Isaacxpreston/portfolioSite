@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import Menu from './menu.js'
 import Portfolio from './portfolio.js'
 import AboutMe from './about_me.js'
+import Landing from './landing.js'
 import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {myPortfolioClicked, aboutMeClicked, clickedAway} from '../actions/icons_actions.js'
@@ -50,7 +51,8 @@ const Main = React.createClass({
 		return (
 			<div>
 				<div className="background" onClick={this.clickedAway}></div>
-
+				
+				<Landing {...this.props} />
 				<Portfolio {...this.props} />
 				<AboutMe {...this.props} />
 
@@ -90,7 +92,8 @@ function mapStatetoProps (state=[]) {
 		portfolioIconsReducer: state.portfolioIconsReducer,
 		windowReducer: state.windowReducer,
 		menuReducer: state.menuReducer,
-		topReducer: state.topReducer
+		topReducer: state.topReducer,
+		landingReducer: state.landingReducer
 	}
 }
 
