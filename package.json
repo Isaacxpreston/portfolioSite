@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node server/server.js",
     "build": "webpack -p",
+    "postinstall": "webpack -p",
     "start": "node server/server.js"
   },
   "author": "",
