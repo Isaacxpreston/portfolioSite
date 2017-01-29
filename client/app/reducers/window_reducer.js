@@ -14,5 +14,17 @@ export function windowReducer (state= {
       about_me: "about-me-notepad handle"
     }
 	}
+  if(action.type === 'PORTFOLIO_X_RELEASED') {
+    return {
+      ...state,
+      portfolio: "portfolio handle hidden"
+    }
+	}
+  if(action.type === 'ABOUT_ME_X_RELEASED') {
+    return {
+      ...state,
+      about_me: "about-me-notepad handle hidden"
+    }
+	}
 	return state;
 }

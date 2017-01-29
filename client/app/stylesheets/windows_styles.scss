@@ -292,3 +292,17 @@ body {
     left: -200%
   }
 }
+
+.x-button-clicked {
+  background-image: url('./images/x_button_clicked.png');
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  z-index: 7;
+}
+
+.x-hidden {
+  opacity: 0
+}

@@ -4,7 +4,7 @@ import {DraggableCore} from 'react-draggable';
 import {alikeMeClicked, songspaceClicked} from '../actions/portfolio_icons_actions.js'
 import {portfolioTop} from '../actions/top_actions.js'
 import {menuClickedAway} from '../actions/menu_actions.js'
-//import {clickedAway} from '../actions/icons_actions.js'
+import {myPortfolioXClicked, myPortfolioXReleased} from '../actions/x_button_actions.js'
 import Content from './portfolio_content.js'
 
 
@@ -20,15 +20,28 @@ const Portfolio = React.createClass({
 
   portfolioClicked () {
 		this.props.dispatch(portfolioTop())
-    //this.props.dispatch(clickedAway())
     this.props.dispatch(menuClickedAway())
 	},
+
+  xClicked () {
+    this.props.dispatch(myPortfolioXClicked())
+  },
+
+  xReleased () {
+    this.props.dispatch(myPortfolioXReleased())
+  },
 
 	render() {
     return (
       <div onClick={this.portfolioClicked}>
         <Draggable axis="both" handle=".handle">
           <div className={this.props.windowReducer.portfolio + this.props.topReducer.portfolio}>
+            <div
+              className={this.props.xButtonReducer.portfolio}
+              onMouseDown={this.xClicked}
+              onMouseUp={this.xReleased}
+            >
+            </div>
             <div
               className={this.props.portfolioIconsReducer.alike_me}
               onClick={this.alikeMeClicked}

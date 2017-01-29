@@ -44,14 +44,16 @@ const Main = React.createClass({
 	render() {
 		//TODO
 		//make divs closeable
-		//make a css loader bar thing for the alike me thumbnail
-		//make some 3d sound bars for the songspace thumbnail
-		//make a landing page
+			//put hidden div with pressed 'x' graphic
+			//on mouse down, dispatch something to make 'x' pressed visible
+			//on mouse up, dispatch something to hide div and hide 'x' pressed image
+		//add thumbnails and descriptions for projects
+		//clean up graphics
 
 		return (
 			<div>
 				<div className="background" onClick={this.clickedAway}></div>
-				
+
 				<Landing {...this.props} />
 				<Portfolio {...this.props} />
 				<AboutMe {...this.props} />
@@ -93,7 +95,8 @@ function mapStatetoProps (state=[]) {
 		windowReducer: state.windowReducer,
 		menuReducer: state.menuReducer,
 		topReducer: state.topReducer,
-		landingReducer: state.landingReducer
+		landingReducer: state.landingReducer,
+		xButtonReducer: state.xButtonReducer
 	}
 }
 

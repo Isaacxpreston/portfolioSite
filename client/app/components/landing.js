@@ -3,7 +3,6 @@ import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
 import {hideLanding} from '../actions/landing_actions.js'
 
-
 const Landing = React.createClass({
   componentDidMount () {
     setTimeout(() => {
