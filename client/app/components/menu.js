@@ -32,7 +32,10 @@ const Menu = React.createClass({
 						className="popup-option twitter"
 						onClick={this.navToLink.bind(this, "https://twitter.com/isaacxpreston")}
 					></div>
-					<div className="popup-option email"></div>
+					<div
+						className="popup-option email"
+						onClick={this.navToLink.bind(this, "mailto:isaacxpreston@gmail.com")}
+					></div> 
 				</div>
 
 				<div className="menu">
