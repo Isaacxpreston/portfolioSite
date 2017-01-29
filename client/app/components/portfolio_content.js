@@ -2,24 +2,57 @@ import React from 'react'
 
 const Content = React.createClass({
 
-  navToLink (url) {
-    window.location.replace(url);
-    //try .href instead of .replace
+	navToLink (url) {
+    window.location.href = url;
   },
+
 
 	render () {
     const project = this.props.myProjects.filter((project) => {
       return project.name === this.props.content
     })[0]
+
+    const githubLink = () => {
+      if(project.github !== "") {
+        return (
+          <div
+            className="project-link"
+            onClick={this.navToLink.bind(this, project.github)}
+          >
+          Github
+          </div>
+        )
+      } else {
+        return null
+      }
+    }
+
+    const demoLink = () => {
+      if(project.demo !== "") {
+        return (
+          <div
+            className="project-link"
+            onClick={this.navToLink.bind(this, project.demo)}
+          >
+          Demo
+          </div>
+        )
+      } else {
+        return null
+      }
+    }
+
     if (project) {
       return (
         <div className="portfolio-content">
-          <h1><b>{this.props.content}</b></h1>
-          <h3>Demo</h3>
-          <h3>Github</h3>
-          <p>{project.description}</p>
-          <p>Tech stack: {project.tech}</p>
-          <h1>Screenshots</h1>
+          <div className="project-header">{this.props.content}</div>
+          {demoLink()}
+          {githubLink()}
+          <div className="about-project">
+            <p>{project.description}</p>
+            <p>Tech stack: {project.tech}</p>
+          </div>
+          <div className="project-subheader">Screenshots</div>
           <p>something something here yeah</p>
         </div>
       )

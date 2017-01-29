@@ -9,7 +9,6 @@ const Menu = React.createClass({
 
 	navToLink (url) {
     window.location.href = url;
-    //try .href instead of .replace
   },
 
 	render() {

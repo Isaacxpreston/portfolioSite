@@ -45,7 +45,8 @@ const AboutMe = React.createClass({
                   <button
                     className="resumeButton"
                     type="submit"
-                  >DOWNLOAD</button> my resume
+                  >DOWNLOAD</button>
+                  my resume
                 </form>
               </div>
             </div>

@@ -2,17 +2,19 @@ export function myProjects () {
 	return [
     {
       name: "Alike Me",
-      url: "http://alikeme.herokuapp.com",
+      demo: "http://alikeme.herokuapp.com",
+      github: "https://github.com/SpaceFalconX/spacefalcon",
       description: "Social Media platform connecting users based on similar personality and interests",
-      date: "2017",
-      tech: "IBM Watson API, React.JS, Node.JS, Bookshelf.JS, MySQL"
+      tech: "IBM Watson API, React.JS, Node.JS, Bookshelf.JS, MySQL",
+      screenshots: ""
     },
     {
       name: "Songspace",
-      url: "",
+      demo: "",
+      github: "https://github.com/A-New-Scope/A-New-Scope",
       description: "3D music visualiser and upload application",
-      date: "2016",
-      tech: "Three.JS, Angular.JS, Node.JS, Mongoose ORM, MongoDB"
+      tech: "Three.JS, Angular.JS, Node.JS, Mongoose ORM, MongoDB",
+      screenshots: ""
     }
   ]
 }
