@@ -27,7 +27,7 @@ var config = {
         loaders: [ 'style-loader', 'css-loader' ]
       },
       {
-        test: /\.(ttf|svg|eot)$/,
+        test: /\.(ttf|svg|eot|pdf)$/,
         loader: 'file-loader',
         options: {
           name: 'fonts/[hash].[ext]',

@@ -7,15 +7,32 @@ const Menu = React.createClass({
 		this.props.dispatch(menuToggle())
 	},
 
+	navToLink (url) {
+    window.location.href = url;
+    //try .href instead of .replace
+  },
+
 	render() {
 		return (
 			<div>
 				<div className={this.props.menuReducer.popup}></div>
 				<div className={this.props.menuReducer.icons}>
-					<div className="popup-option linkedIn"></div>
-					<div className="popup-option facebook"></div>
-					<div className="popup-option github"></div>
-					<div className="popup-option twitter"></div>
+					<div
+						className="popup-option linkedIn"
+						onClick={this.navToLink.bind(this, "https://www.linkedin.com/in/isaacxpreston")}
+					></div>
+					<div
+						className="popup-option facebook"
+						onClick={this.navToLink.bind(this, "https://www.facebook.com/supitsisaac")}
+					></div>
+					<div
+						className="popup-option github"
+						onClick={this.navToLink.bind(this, "https://github.com/Isaacxpreston")}
+					></div>
+					<div
+						className="popup-option twitter"
+						onClick={this.navToLink.bind(this, "https://twitter.com/isaacxpreston")}
+					></div>
 					<div className="popup-option email"></div>
 				</div>
 

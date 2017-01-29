@@ -134,7 +134,7 @@ body {
 
 .about-me-content {
   position: absolute;
-  overflow: scroll;
+  overflow: hidden;
   top: 44px;
   left: 5px;
   height: 300px;
@@ -145,17 +145,19 @@ body {
 .profilePic {
   height: 150px;
   width: 150px;
-  display: inline-block;
-  vertical-align: top;
-  border: 20px solid white;
+  float: right; 
+  border-top: 45px solid white;
+  border-left: 20px solid white;
+  border-right: 30px solid white;
   background-image: url("./images/profilepic2.png");
   background-size: cover;
 }
 
 .bio {
-  display: inline-block;
-  vertical-align: top;
-  border: 20px solid transparent;
+  float: left;
+  font-size: 14px;
+  border-top: 30px solid white;
+  border-left: 20px solid white;
 }
 
 .popup {
@@ -305,4 +307,15 @@ body {
 
 .x-hidden {
   opacity: 0
+}
+
+.resumeButton {
+  background: none;
+  border: none;
+  margin-left: -5px;
+  font-size: 14px;
+}
+
+.resumeButton:focus {
+  outline: 0;
 }

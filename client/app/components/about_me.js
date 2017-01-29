@@ -4,6 +4,8 @@ import {DraggableCore} from 'react-draggable';
 import {aboutMeTop} from '../actions/top_actions.js'
 import {menuClickedAway} from '../actions/menu_actions.js'
 import {aboutMeXClicked, aboutMeXReleased} from '../actions/x_button_actions.js'
+import axios from 'axios';
+
 
 const AboutMe = React.createClass({
   aboutMeClicked () {
@@ -31,11 +33,20 @@ const AboutMe = React.createClass({
             >
             </div>
             <div className="about-me-content">
-              <div className="bio">
-                <p>My name is Isaac and this is my bio</p>
-                <p>Thanks for reading</p>
-              </div>
               <div className="profilePic">
+              </div>
+              <div className="bio">
+                <p>My name is Isaac</p>
+                <p>I grew up in Philadelphia</p>
+                <p>I am a full stack software engineer</p>
+                <p>I made this site in React.js with Redux</p>
+                <p>100 Demons is my favorite band</p>
+                <form method="get" action={require("../resume.pdf")}>
+                  <button
+                    className="resumeButton"
+                    type="submit"
+                  >DOWNLOAD</button> my resume
+                </form>
               </div>
             </div>
           </div>
