@@ -42,6 +42,14 @@ const Content = React.createClass({
       }
     }
 
+    const Screenshots = () => {
+      return (
+        <div className="portfolio-image">
+          <img src={require("../stylesheets/images/" + project.screenshots)} />
+        </div>
+      )
+    }
+
     if (project) {
       return (
         <div className="portfolio-content">
@@ -53,7 +61,7 @@ const Content = React.createClass({
             <p>Tech stack: {project.tech}</p>
           </div>
           <div className="project-subheader">Screenshots</div>
-          <p>something something here yeah</p>
+          {Screenshots()}
         </div>
       )
     } else {
