@@ -87,7 +87,7 @@ body {
   position: absolute;
   width: 118px;
   height: 18px;
-  top: 175px;
+  top: 193px;
   left: 19px;
   background-image: url("./images/alike_me_folder.png");
   z-index: 4;
@@ -101,7 +101,7 @@ body {
   position: absolute;
   width: 128px;
   height: 18px;
-  top: 193px;
+  top: 211px;
   left: 19px;
   background-image: url("./images/songspace_folder.png");
   z-index: 4;
@@ -111,10 +111,24 @@ body {
   background-image: url("./images/songspace_folder_selected.png");
 }
 
+.sixteen-personality-folder {
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  top: 175px;
+  left: 19px;
+  background-image: url("./images/personality_data_folder.png");
+  z-index: 4;
+}
+
+.sixteen-personality-folder-selected {
+  background-image: url("./images/personality_data_folder_selected.png");
+}
+
 .portfolio-content {
   position: absolute;
   overflow: scroll;
-  top: 115px;
+  top: 120px;
   left: 205px;
   height: 407px;
   width: 654px;
@@ -350,4 +364,5 @@ body {
 
 .portfolio-image {
   width: 500px;
+  padding: 10px;
 }

@@ -9,3 +9,9 @@ export function songspaceClicked () {
 		type: 'SONGSPACE_CLICKED',
 	}
 }
+
+export function sixteenPersonalityClicked () {
+	return {
+		type: 'SIXTEEN_PERSONALITY_CLICKED',
+	}
+}

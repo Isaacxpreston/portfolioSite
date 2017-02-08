@@ -43,11 +43,13 @@ const Content = React.createClass({
     }
 
     const Screenshots = () => {
-      return (
-        <div className="portfolio-image">
-          <img src={require("../stylesheets/images/" + project.screenshots)} />
-        </div>
-      )
+      return project.screenshots.map((screenshot) => {
+        return (
+          <div className="portfolio-image">
+            <img src={require("../stylesheets/images/" + screenshot)} />
+          </div>
+        )
+      })
     }
 
     if (project) {

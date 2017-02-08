@@ -12,6 +12,12 @@ import {portfolioIconClicked, aboutMeIconClicked} from '../actions/window_action
 import {menuClickedAway} from '../actions/menu_actions.js'
 import {portfolioTop, aboutMeTop} from '../actions/top_actions.js'
 
+
+//TODO
+//include github link to this repo in 'about me' section
+//change email link to copy and paste text with seperate popout menu bar
+//more screenshots
+
 const Main = React.createClass({
 
 	clickedAway () {
