@@ -1,7 +1,7 @@
 import React from 'react'
 import Draggable from 'react-draggable';
 import {DraggableCore} from 'react-draggable';
-import {alikeMeClicked, songspaceClicked, sixteenPersonalityClicked} from '../actions/portfolio_icons_actions.js'
+import {alikeMeClicked, songspaceClicked, sixteenPersonalityClicked, yt3dClicked} from '../actions/portfolio_icons_actions.js'
 import {portfolioTop} from '../actions/top_actions.js'
 import {menuClickedAway} from '../actions/menu_actions.js'
 import {myPortfolioXClicked, myPortfolioXReleased} from '../actions/x_button_actions.js'
@@ -9,6 +9,10 @@ import Content from './portfolio_content.js'
 
 
 const Portfolio = React.createClass({
+
+  yt3dClicked () {
+		this.props.dispatch(yt3dClicked())
+	},
 
   alikeMeClicked () {
 		this.props.dispatch(alikeMeClicked())
@@ -46,6 +50,10 @@ const Portfolio = React.createClass({
               onMouseUp={this.xReleased}
             >
             </div>
+            <div
+              className={this.props.portfolioIconsReducer.yt3d}
+              onClick={this.yt3dClicked}
+            ></div>
             <div
               className={this.props.portfolioIconsReducer.sixteen_personality}
               onClick={this.sixteenPersonalityClicked}

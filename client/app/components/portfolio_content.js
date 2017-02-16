@@ -1,5 +1,12 @@
 import React from 'react'
 
+const styles = {
+  img: {
+    height: "328px",
+    width: "600px"
+  }
+}
+
 const Content = React.createClass({
 
 	navToLink (url) {
@@ -46,7 +53,7 @@ const Content = React.createClass({
       return project.screenshots.map((screenshot) => {
         return (
           <div className="portfolio-image">
-            <img src={require("../stylesheets/images/" + screenshot)} />
+            <img src={require("../stylesheets/images/" + screenshot)} style={styles.img} />
           </div>
         )
       })

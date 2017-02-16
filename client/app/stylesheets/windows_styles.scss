@@ -83,25 +83,11 @@ body {
   background-image: url("./images/about_me_selected.png");
 }
 
-.alike-me-folder {
-  position: absolute;
-  width: 118px;
-  height: 18px;
-  top: 193px;
-  left: 19px;
-  background-image: url("./images/alike_me_folder.png");
-  z-index: 4;
-}
-
-.alike-me-folder-selected {
-  background-image: url("./images/alike_me_folder_selected.png");
-}
-
 .songspace-folder {
   position: absolute;
   width: 128px;
   height: 18px;
-  top: 211px;
+  top: 229px;
   left: 19px;
   background-image: url("./images/songspace_folder.png");
   z-index: 4;
@@ -111,11 +97,25 @@ body {
   background-image: url("./images/songspace_folder_selected.png");
 }
 
+.alike-me-folder {
+  position: absolute;
+  width: 118px;
+  height: 18px;
+  top: 211px;
+  left: 19px;
+  background-image: url("./images/alike_me_folder.png");
+  z-index: 4;
+}
+
+.alike-me-folder-selected {
+  background-image: url("./images/alike_me_folder_selected.png");
+}
+
 .sixteen-personality-folder {
   position: absolute;
   width: 200px;
   height: 18px;
-  top: 175px;
+  top: 193px;
   left: 19px;
   background-image: url("./images/personality_data_folder.png");
   z-index: 4;
@@ -123,6 +123,20 @@ body {
 
 .sixteen-personality-folder-selected {
   background-image: url("./images/personality_data_folder_selected.png");
+}
+
+.yt3d-folder {
+  position: absolute;
+  width: 128px;
+  height: 18px;
+  top: 175px;
+  left: 19px;
+  background-image: url("./images/yt3d_folder.png");
+  z-index: 4;
+}
+
+.yt3d-folder-selected {
+  background-image: url("./images/yt3d_folder_selected.png");
 }
 
 .portfolio-content {

@@ -1,13 +1,7 @@
 const express = require('express');
 const path = require('path')
-// const bodyParser = require('body-parser');
-// const morgan = require('morgan')
 const webpack = require('webpack');
-
 const config = require('../webpack.config.js');
-// const dummy = require('./routes/dummy_router.js');
-
-// APP SETUP & MIDDLEWARE
 const app = express();
 const compiler = webpack(config);
 app.use(require('webpack-dev-middleware')(compiler, {

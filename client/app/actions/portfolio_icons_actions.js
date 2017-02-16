@@ -15,3 +15,9 @@ export function sixteenPersonalityClicked () {
 		type: 'SIXTEEN_PERSONALITY_CLICKED',
 	}
 }
+
+export function yt3dClicked () {
+	return {
+		type: 'YT3D_CLICKED',
+	}
+}
