@@ -17,7 +17,7 @@ export function myProjects () {
       screenshots: ["songspace_screenshot.png", "songspace_screenshot_2.png"]
     },
     {
-      name: "Personality Data",
+      name: "PersonalityData.co",
       demo: "http://www.personalitydata.co/",
       github: "https://github.com/Isaacxpreston/3dstates",
       description: "Interactive 3D data mapping of responses to the Myers-Briggs Type Indicator assessment in the United States",
@@ -25,7 +25,7 @@ export function myProjects () {
       screenshots: ["personality_data_screenshot.png", "personality_data_screenshot_2.png"]
     },
     {
-      name: "YT3D Converter",
+      name: "YT3DConverter.com",
       demo: "http://www.yt3dconverter.com/",
       github: "https://github.com/Isaacxpreston/youtube_convert",
       description: "Convert YouTube videos to 3D visualizations",
